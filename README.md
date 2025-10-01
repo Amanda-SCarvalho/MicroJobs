@@ -86,7 +86,7 @@ Ser reconhecido pela **simplicidade, confiança e acessibilidade**, transformand
 
 ### 🔑 Login
 
-![Login](screenshots/login.png)
+![Login](Assets/login.png)
 
 ### 👤 Perfil do Usuário
 
