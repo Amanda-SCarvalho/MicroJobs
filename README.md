@@ -1,5 +1,9 @@
 # 📱 MicroJobs – Trabalho na Mão
 
+![Logo MicroJobs](assets/logo.png)
+
+🔗 [Acesse o site aqui](https://amanda-scarvalho.github.io/login-responsivo-proa/index.html)
+
 > Encontre o job perfeito ou publique o seu e comece agora mesmo!
 
 ---
@@ -108,6 +112,3 @@ Ser reconhecido pela **simplicidade, confiança e acessibilidade**, transformand
 * **Serasa Experian** – pelo incentivo e conexão com o mercado
 * **Professores** – “Mago” e Graziella, pelo suporte e inspiração
 
----
-
-Quer que eu monte também os **arquivos de exemplo (placeholders)** na pasta `screenshots/` com imagens simples de mockup, para já deixar pronto no repositório?
