@@ -7,8 +7,10 @@
     <title>MicroJobs - Freelancers</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/darkMode.css">
     <link rel="stylesheet" href="css/acessibilidade.css">
+    
 </head>
 
 <body>
@@ -24,6 +26,7 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#Microjobs">Microjobs</a></li>
                     <li><a href="#freelancers">Freelancers</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="login.html" class="btn-login">
                             <i class="fas fa-user"></i> Login
@@ -205,6 +208,74 @@
     <script src="js/index.js"></script>
     <script src="js/acessibilidade.js"></script>
     <script src="js/darkMode.js"></script>
+
+    <!-- Ícone do chat -->
+    <div id="chat-icon" style="position: fixed; top: 50%; right: 20px; transform: translateY(-50%); cursor: pointer; z-index: 1000;">
+        <i class="fas fa-comments" style="font-size: 60px; color: #007bff;"></i>
+    </div>
+
+    <!-- Container do chat -->
+    <div id="chat-container" style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); width: 300px; height: 400px; display: none; border: 1px solid #ccc; border-radius: 10px 0 0 10px; background: white; z-index: 1000; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <div class="chat-container">
+            <div class="chat-header">
+                WORKLI IA🤖
+                <button id="close-chat" style="float: right; background: none; border: none; color: white; font-size: 20px; cursor: pointer;">&times;</button>
+            </div>
+
+            <div class="api-setup">
+                <input type="password" id="apiKey" placeholder="Cole sua API key do Groq aqui (grátis)" />
+                <button onclick="conectarIA()">Conectar</button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message info">
+                    <strong>🚀 Como obter sua API key GRATUITA:</strong><br><br>
+                    1. Acesse <a href="https://console.groq.com/keys" target="_blank">console.groq.com/keys</a><br>
+                    2. Faça login ou crie conta gratuita<br>
+                    3. Clique em <strong>"Create API Key"</strong><br>
+                    4. Dê um nome qualquer (ex: "MeuChat")<br>
+                    5. <strong>COPIE a chave completa</strong><br>
+                    6. Cole aqui e clique "Conectar"<br><br>
+                    ✅ <strong>Groq oferece créditos gratuitos!</strong><br>
+                    ⚡ <strong>Super rápido e ilimitado para uso pessoal</strong>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Conecte primeiro com sua API key..." disabled>
+                <button id="sendButton" onclick="enviarMensagem()" disabled>Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatIcon = document.getElementById('chat-icon');
+        const chatContainer = document.getElementById('chat-container');
+        const closeChatBtn = document.getElementById('close-chat');
+
+        chatIcon.addEventListener('click', () => {
+            // Alterna entre mostrar e esconder o chat
+            if(chatContainer.style.display === 'none') {
+                chatContainer.style.display = 'block';
+            } else {
+                chatContainer.style.display = 'none';
+            }
+        });
+
+        closeChatBtn.addEventListener('click', () => {
+            chatContainer.style.display = 'none';
+        });
+
+        const chatMessages = document.getElementById('chatMessages');
+
+// depois de inserir a mensagem:
+chatMessages.appendChild(novaMensagem); // ou chatMessages.innerHTML += ...
+// forçar scroll ao fim (suave)
+chatMessages.scrollTo({ top: chatMessages.scrollHeight, behavior: 'smooth' });
+
+    </script>
+
+    <script src="js/chat.js"></script>
 </body>
 
 </html>
