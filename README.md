@@ -86,19 +86,19 @@ Ser reconhecido pela **simplicidade, confiança e acessibilidade**, transformand
 
 ### 🔑 Login
 
-![Login](Assets/login.png)
+![Login](assets/login.png)
 
 ### 👤 Perfil do Usuário
 
-![Perfil](screenshots/profile.png)
+![Perfil](assets/perfil.png)
 
 ### 📌 Listagem de Serviços
 
-![Listagem](screenshots/listagem.png)
+![Listagem](assets/listagem.png)
 
-### 💬 Mensagens
+### 💬 Chat
 
-![Mensagens](screenshots/mensagens.png)
+![Chat](assets/chat.png)
 
 ---
 
