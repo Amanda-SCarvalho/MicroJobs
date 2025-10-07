@@ -2,7 +2,7 @@
 
 ![Logo MicroJobs](assets/logo.png)
 
-🔗 [Acesse o site aqui](https://amanda-scarvalho.github.io/login-responsivo-proa/index.html)
+🔗 [Acesse o site aqui](https://amanda-scarvalho.github.io/MicroJobs/index.html)
 
 > Encontre o job perfeito ou publique o seu e comece agora mesmo!
 
